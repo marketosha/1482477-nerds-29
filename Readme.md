@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Евгения Кабанова](https://up.htmlacademy.ru/htmlcss/29/user/1482477).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Жилин](https://htmlacademy.ru/profile/andreyka)
 
 ---
 
