@@ -1,0 +1,124 @@
+/* Variables */
+:root {
+    --basic-dark-black:  #000000;
+    --basic-black: #283136;
+    --basic-grey: #EEEEEE;
+    --basic-dark-grey: #888888;
+    --basic-light-red: #FB565A;
+    --basic-red: #E74246;
+    --basic-dark-red: #D7373B;
+    --basic-green: #00CA74;
+    --basic-yellow: #EFC849;
+    --basic-white: #FFFFFF;
+
+
+}
+
+/* body */
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+/* main-header*/
+
+.main-header {
+    background-color: var(--basic-grey);
+}
+
+/* main-navigation*/
+
+.main-navigation {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--basic-dark-black);
+    text-transform: uppercase;
+    background-color: var(--basic-grey);  
+}
+
+/* site navigation */
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.basket {
+    color: var(--basic-dark-black);
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.basket:hover {
+    color: var(--basic-light-red);
+}
+
+/* container */
+
+/* slider */
+
+.slider {
+    background-color: var(--basic-grey);
+}
+
+.news-slider h3{
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    color: var(--basic-dark-black);
+}
+
+.news-slider p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-light-red);
+    border-radius: 3px;    
+}
+
+.button:hover {
+    background-color: var(--basic-red);
+}
+
+
+/* product */
+
+.product-list {
+    list-style: none;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.product-item p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.product-button {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-light-red);
+    border-radius: 3px;
+}
+
+ .product-button:last-child {
+     background-color: var(--basic-yellow);
+ }
