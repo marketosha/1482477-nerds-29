@@ -2,13 +2,19 @@
 :root {
     --basic-dark-black:  #000000;
     --basic-black: #283136;
+    --basic-light-grey: #666666;
     --basic-grey: #EEEEEE;
+    --basic-darker-grey: #444444;
     --basic-dark-grey: #888888;
     --basic-light-red: #FB565A;
     --basic-red: #E74246;
     --basic-dark-red: #D7373B;
-    --basic-green: #00CA74;
-    --basic-yellow: #EFC849;
+    --basic-light-green: #00CA74;
+    --basic-green: #00BC6C;
+    --basic-dark-green: #00AA62;
+    --basic-light-yellow: #EFC84A;
+    --basic-yellow: #EAB534;
+    --basic-dark-yellow: #E5A722;
     --basic-white: #FFFFFF;
 
 
@@ -78,6 +84,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--basic-white);
@@ -88,7 +95,6 @@ body {
 .button:hover {
     background-color: var(--basic-red);
 }
-
 
 /* product */
 
@@ -109,16 +115,163 @@ body {
     color: var(--basic-black);
 }
 
-.product-button {
+.product-button-site {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
+    text-align: center;
     text-transform: uppercase;
     color: var(--basic-white);
     background-color: var(--basic-light-red);
     border-radius: 3px;
+    border: none;
 }
 
- .product-button:last-child {
-     background-color: var(--basic-yellow);
- }
+.product-button-site:hover {
+    background-color: var(--basic-red);
+}
+
+.product-button-site:active {
+    background-color: var(--basic-dark-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    opacity: 0.3;
+}
+
+.product-button-apps {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-light-green);
+    border-radius: 3px;
+    border: none;
+}    
+
+.product-button-apps:hover {
+    background-color: var(--basic-green);
+}
+
+.product-button-apps:active {
+    background-color: var(--basic-dark-green);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    opacity: 0.3;
+}
+
+.product-button-presentation {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-light-yellow);
+    border-radius: 3px;
+    border: none;
+}    
+
+.product-button-presentation:hover {
+    background-color: var(--basic-yellow);
+}
+
+.product-button-presentation:active {
+    background-color: var(--basic-dark-yellow);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    opacity: 0.3;
+}
+
+/* company */
+
+
+.company-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+.company-title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: var(--basic-dark-black);
+}
+
+.company-product {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.company-product-list {
+    list-style: none;
+}
+
+/*company-statistics*/
+
+.company-statistics-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-dark-black);
+}
+
+.company-statistics-percent {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: bold;
+    color: var(--basic-dark-black);
+}
+
+.company-statistics-index {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-black);    
+}
+
+/*projects*/
+
+.projects-item {
+    list-style: none;
+}
+
+/*main-footer*/
+
+.footer-contacts {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-light-grey);
+}
+
+.footer-contacts h3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--basic-dark-black);
+    background-color: var(--basic-white);
+}
+
+.contact {
+    color: var(--basic-light-grey);
+    text-decoration: none;
+}
+
+/*footer-social*/
+
+.social-button {
+    list-style: none;
+}
+
+.footer-social {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basic-darker-grey);
+}
+.footer-social-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: var(--basic-dark-black);
+}
