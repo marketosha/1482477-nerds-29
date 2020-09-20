@@ -35,6 +35,21 @@ body {
   background-color: var(--basic-grey);
 }
 
+/*main-header-logo*/
+
+.main-header-logo {
+  opacity: 1, 0;
+}
+
+.main-header-logo:hover {
+  opacity: 1.0;
+}
+
+.main-header-logo:focus,
+.main-header-logo:active {
+  opacity: 0.6;
+}
+
 /* main-navigation*/
 
 .main-navigation {
@@ -57,11 +72,25 @@ body {
   text-decoration: none;
 }
 
-.site-navigation-current a,
-.site-navigation-current:hover,
-.site-navigation-current:focus,
-.site-navigation-current:active {
+.site-navigation a:hover {
+  color: var(--basic-light-red);
+}
+
+.site-navigation a:focus {
   color: var(--basic-dark-black);
+  opacity: 0.3;
+}
+
+.site-navigation a:active {
+  color: var(--basic-dark-black);
+}
+
+.site-navigation-current a,
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
+  color: var(--basic-dark-black);
+  border-bottom: 2px solid var(--basic-light-red);
 }
 
 .basket {
@@ -70,19 +99,16 @@ body {
   text-align: right;
 }
 
-.site-navigation a:hover,
 .basket:hover {
   color: var(--basic-light-red);
 }
 
-.site-navigation a:focus,
 .basket a:focus {
-  color: var(--basic-opacity-black);
+  color: var(--basic-dark-black);
+  opacity: 0.3;
 }
 
-.site-navigation a:active,
 .basket a:active {
-
   color: var(--basic-dark-black);
 }
 
@@ -275,8 +301,18 @@ body {
 
 .projects-item {
   list-style: none;
+  opacity: 0.2;
 }
 
+.projects-item:hover {
+  opacity: 1.0;
+}
+
+.projects-item:focus,
+.projects-item:active {
+  list-style: none;
+  opacity: 0.1;
+}
 /* container */
 
 .container-title {
