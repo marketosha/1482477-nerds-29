@@ -38,16 +38,16 @@ body {
 /*main-header-logo*/
 
 .main-header-logo {
-  opacity: 1, 0;
+  opacity: 1;
 }
 
 .main-header-logo:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .main-header-logo:focus,
 .main-header-logo:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 /* main-navigation*/
@@ -305,7 +305,7 @@ body {
 }
 
 .projects-item:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .projects-item:focus,
@@ -347,6 +347,19 @@ body {
   line-height: 30px;
   color: var(--basic-dark-black);
   text-transform: uppercase;
+}
+
+.catalog-product-title {
+  color: var(--basic-dark-black);
+  text-decoration: none;
+}
+.catalog-product-title:hover {
+  color: var(--basic-light-red);
+}
+
+.catalog-product-title:focus,
+.catalog-product-title:focus {
+  color: var(--basic-opacity-black);
 }
 
 .catalog-button {
