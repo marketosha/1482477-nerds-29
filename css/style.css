@@ -58,7 +58,7 @@ body {
   flex-direction: row;
   align-items: center;
   width: 1160px;
-  margin: 0 auto;
+  margin: 48px auto 0 auto;
   padding: 0 20px;
   font-size: 16px;
   font-weight: 500;
@@ -130,6 +130,7 @@ body {
 .site-navigation-current a:focus,
 .site-navigation-current a:active {
   color: var(--basic-dark-black);
+  padding-bottom: 13px;
   border-bottom: 2px solid var(--basic-light-red);
 }
 
@@ -474,13 +475,14 @@ body {
   padding: 0 20px;
 }
 .page-title-design {
-  grid-column: 1 / -1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   background-color: var(--basic-grey);
 }
 
 .page-title {
-  margin: 0;
+  margin-top: 78px;
+  margin-bottom: 108px;
   padding: 0;
   font-size: 55px;
   font-weight: 500;
@@ -520,6 +522,8 @@ body {
 }
 
 .catalog-product h3 {
+  margin-top: 26px;
+  margin-bottom: 12px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -536,11 +540,16 @@ body {
 }
 
 .catalog-product-title:focus,
-.catalog-product-title:focus {
+.catalog-product-title:active {
   color: var(--basic-opacity-black);
 }
-
+.catalog-product-direction {
+  margin-bottom: 32px;
+}
 .catalog-button {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 44px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -558,26 +567,28 @@ body {
 .catalog-button:focus,
 .catalog-button:active {
   background-color: var(--basic-dark-red);
-  border: none;
+  outline: none;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /* Pagination */
 
 .pagination {
-  display: grid;
-  grid-template-columns: min-content min-content;
-  margin-right: 11px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .pagination-list {
-  display: grid;
-  grid-template-columns: min-content min-content min-content;
+  display: flex;
   margin-right: 11px;
   list-style: none;
 }
 
 .pagination-item {
+  display: flex;
+  align-items: center;
+  margin-right: 11px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -606,6 +617,23 @@ body {
 .pagination-item-current a:active {
   color: var(--basic-dark-black);
   background-color: var(--basic-clear-white);
+}
+
+.pagination-button,
+.pagination-button:hover,
+.pagination-button:focus,
+.pagination-button:active {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
 }
 
 /*main-footer*/
