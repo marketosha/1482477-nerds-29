@@ -475,20 +475,19 @@ body {
   padding: 0 20px;
 }
 .page-title-design {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 108px;
   background-color: var(--basic-grey);
 }
 
 .page-title {
-  margin-top: 78px;
-  margin-bottom: 108px;
-  padding: 0;
+  margin: 0;
+  padding: 72px 347px 108px 348px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   color: var(--basic-dark-black);
   background-color: var(--basic-grey);
+  text-align: center;
 }
 
 /*filters*/
@@ -511,10 +510,8 @@ body {
 }
 
 .catalog-product {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  gap: 41px;
+  display: flex;
+  flex-direction: column;
   width: 360px;
   color: var(--basic-light-grey);
   background-color: var(--basic-grey);
@@ -575,7 +572,6 @@ body {
 
 .pagination {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -624,7 +620,9 @@ body {
 .pagination-button:focus,
 .pagination-button:active {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  padding-left: 78px;
   width: 260px;
   height: 50px;
   font-size: 16px;
