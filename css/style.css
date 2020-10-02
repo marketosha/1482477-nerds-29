@@ -101,21 +101,26 @@ body {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 437px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.site-navigation a {
-  display: block;
-  padding-right: 45px;
-  color: var(--basic-dark-black);
-  text-decoration: none;
+.site-navigation li {
+  margin-right: 45px;
 }
 
-.site-navigation a:nth-child(4n) {
-  padding-right: 0;
+.site-navigation li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  color: var(--basic-dark-black);
+  text-decoration: none;
 }
 
 .site-navigation a:hover {
@@ -142,12 +147,22 @@ body {
 
 .basket {
   display: flex;
-  margin-left: 246px;
+  position: relative;
   max-width: 100px;
+  margin-left: 246px;
   padding-left: 45px;
-  color: var(--basic-dark-black);
-  text-decoration: none;
   text-align: right;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url(img/cart-icon.svg);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-color: #dd4b4b;
 }
 
 .basket:hover {
@@ -161,17 +176,17 @@ body {
 /*visual-hidden*/
 
 .visual-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
- }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*container*/
 
