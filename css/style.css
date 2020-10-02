@@ -74,6 +74,7 @@ body {
 
 .main-navigation-wrapper {
   display: flex;
+  justify-content: space-between;
   margin-left: 202px;
 }
 
@@ -99,17 +100,22 @@ body {
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   width: 437px;
-  max-width: 640px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .site-navigation a {
+  display: block;
+  padding-right: 45px;
   color: var(--basic-dark-black);
   text-decoration: none;
+}
+
+.site-navigation a:nth-child(4n) {
+  padding-right: 0;
 }
 
 .site-navigation a:hover {
@@ -155,8 +161,17 @@ body {
 /*visual-hidden*/
 
 .visual-hidden {
-  display: none;
-}
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+ }
 
 /*container*/
 
