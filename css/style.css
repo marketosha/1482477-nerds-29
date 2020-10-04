@@ -310,11 +310,12 @@ body {
 }
 
 .slider-controls {
+  display: flex;
   position: absolute;
   top: 432px;
-  left: 717px;
-  display: flex;
+  left: 50%;
   width: 88px;
+  transform: translate(-50%);
   justify-content: space-between;
   margin-right: 17px;
 }
@@ -831,13 +832,12 @@ body {
 
 .footer-container-map {
   position: relative;
-  margin-top: 80px;
-  margin-bottom: 75px;
+  margin: 80px auto 75px auto;
   width: 1440px;
   height: 416px;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  transform: translateX(40px);
+
 }
 
 .footer-container-map::before {
