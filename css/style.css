@@ -832,7 +832,7 @@ body {
 
 .footer-container-map {
   position: relative;
-  margin: 80px auto 75px auto;
+  margin: 80px auto 75px;
   width: 1440px;
   height: 416px;
   background-image: url("../img/map.jpg");
