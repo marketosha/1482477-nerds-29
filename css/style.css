@@ -370,6 +370,7 @@ body {
   left: 50%;
   width: 88px;
   transform: translate(-50%);
+  z-index: 1;
 }
 
 .slider-controls button {
@@ -1222,6 +1223,7 @@ body {
 /*modal*/
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
