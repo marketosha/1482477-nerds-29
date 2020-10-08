@@ -1,3 +1,31 @@
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"),
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+}
+
 /* Variables */
 :root {
   --basic-dark-black: #000000;
@@ -40,7 +68,7 @@ body {
   min-width: 1160px;
   margin: 0;
   padding: 0;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 /*Grid*/
@@ -137,12 +165,9 @@ body {
   color: var(--basic-light-red);
 }
 
-.site-navigation a:focus {
-  color: var(--basic-opacity-black);
-}
-
+.site-navigation a:focus,
 .site-navigation a:active {
-  color: var(--basic-dark-black);
+  color: var(--basic-opacity-black-30);
 }
 
 .site-navigation-current {
@@ -306,7 +331,7 @@ body {
 }
 
 .button {
-  display: inline-block;
+  display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -904,7 +929,7 @@ body {
 
 .catalog-product-title:focus,
 .catalog-product-title:active {
-  color: var(--basic-opacity-black);
+  color: var(--basic-opacity-black-30);
 }
 
 .catalog-product-direction {
@@ -1151,7 +1176,7 @@ body {
 
 .social-button-list:active {
   background-color: var(--basic-dark-red);
-  box-shadow: inset 0px 3px 0px;
+  box-shadow: inset 0px 3px 0px var(--basis-shadow-grey);
 }
 
 .social-button-list:active::before {
@@ -1213,7 +1238,7 @@ body {
 /*modal-contact*/
 
 .modal-contact {
-  top: 20px;
+  top: 40px;
   bottom: auto;
   width: 960px;
   padding: 63px auto 84px;
