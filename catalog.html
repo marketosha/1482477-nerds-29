@@ -12,7 +12,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="159.87px" height="65.02px" alt="Nёrd's">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Nёrd's">
       </a>
       <div class="main-header-bar">
         <div class="main-navigation-wrapper">
@@ -36,7 +36,7 @@
     <div class="catalog-container">
       <section class="filters">
         <div class="filters-catalog">
-          <h2 class="visual-hidden">Фильтр товаров</h2>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
@@ -58,13 +58,86 @@
                 </div>
               </div>
             </fieldset>
-
-            <!-- Другие элементы формы -->
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                    value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                    value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group"
+                    value="rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                    name="product-advantage" value="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                    name="product-advantage" value="block-advantage" id="filter-block-advatage">
+                  <label for="filter-block-advatage">Блок преимуществ</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                    name="product-advantage" value="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                    name="product-advantage" value="gallary" id="filter-gallary">
+                  <label for="filter-gallary">Галерея</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox"
+                    name="product-advantage" value="basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
           </form>
         </div>
       </section>
+      <section class="sort catalog-sort">
+        <h2 class="sort-title">Сортировать:</h2>
+
+        <ul class="sort-type">
+          <li class="sort-type-item">
+            <a class="sort-type-link sort-type-link-current">По цене</a>
+          </li>
+          <li class="sort-type-item">
+            <a class="sort-type-link" href="#">По типу</a>
+          </li>
+          <li class="sort-type-item">
+            <a class="sort-type-link" href="#">По названию</a>
+          </li>
+        </ul>
+
+        <ul class="sort-direction">
+          <li class="sort-direction-item">
+            <a class="sort-direction-link-current"><span class="visually-hidden">По убыванию</span></a>
+          </li>
+          <li class="sort-direction-item">
+            <a class="sort-direction-link" href="#"><span class="visually-hidden">По возрастанию</span></a>
+          </li>
+        </ul>
+      </section>
       <section class="catalog">
-        <h2 class="visual-hidden">Список веб-сайтов</h2>
+        <h2 class="visually-hidden">Список веб-сайтов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="catalog-image">
@@ -159,7 +232,7 @@
   <footer class="page-footer main-footer">
     <div class="footer-container-map">
       <section class="footer-contacts container">
-        <h2 class="visual-hidden">Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
         <div class="footer-contacts-window">
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,<br>
@@ -170,22 +243,22 @@
       </section>
     </div>
     <section class="footer-social container">
-      <h2 class="visual-hidden">Давайте дружить</h2>
+      <h2 class="visually-hidden">Давайте дружить</h2>
       <div class="social-button">
         <ul class="social-button-item">
           <li class="social-button-list">
             <a href="#">
-              <span class="visual-hidden">Вконтакте</span>
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-button-list social-button-list-facebook">
             <a href="#">
-              <span class="visual-hidden">Фейсбук</span>
+              <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-button-list social-button-list-inst">
             <a href="#">
-              <span class="visual-hidden">Инстаграм</span>
+              <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
         </ul>
