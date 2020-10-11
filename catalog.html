@@ -271,6 +271,26 @@
       </div>
     </section>
   </footer>
+  <section class="modal modal-contact">
+    <h2>Напишите нам</h2>
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="contact-name">Ваше имя:</label>
+        <input class="contact-name-user" id="contact-name" type="text" name="name-user" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="contact-mail">Ваш email:</label>
+        <input class="contact-mail-user" id="contact-mail" type="text" name="mail-user"
+          placeholder="email@example.com ">
+      </p>
+      <p>
+        <label for="contact-text">Текст письма:</label>
+        <textarea name="contact-text-user" id="contact-text" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="contact-form-button button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 </body>
 
 </html>
