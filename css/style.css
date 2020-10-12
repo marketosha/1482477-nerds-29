@@ -132,11 +132,11 @@ body {
   opacity: 1;
 }
 
-.main-header-logo:hover {
+.main-header-logo:hover,
+.main-header-logo:focus {
   opacity: 1;
 }
 
-.main-header-logo:focus,
 .main-header-logo:active {
   opacity: 0.3;
 }
@@ -151,7 +151,7 @@ body {
   width: 437px;
   margin: 0;
   padding: 0;
-  margin-top: 26px;
+  margin-top: 23px;
   padding-right: 45px;
   list-style: none;
 }
@@ -163,7 +163,7 @@ body {
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   color: var(--basic-dark-black);
   text-decoration: none;
 }
@@ -172,8 +172,7 @@ body {
   color: var(--basic-light-red);
 }
 
-.site-navigation a:focus,
-.site-navigation a:active {
+.site-navigation a:focus {
   color: var(--basic-opacity-black-30);
 }
 
@@ -188,7 +187,7 @@ body {
 .site-navigation-current::after {
   content: "";
   position: absolute;
-  bottom: -7px;
+  bottom: -11px;
   width: 74px;
   height: 2px;
   background-color: var(--basic-light-red);
@@ -228,9 +227,8 @@ body {
   color: var(--basic-light-red);
 }
 
-.basket:focus,
-.basket:active {
-  color: var(--basic-opacity-black);
+.basket:focus {
+  color: var(--basic-opacity-black-30);
 }
 
 /*visually-hidden*/
@@ -349,12 +347,13 @@ body {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--basic-red);
   border: none;
 }
 
-.button:focus,
+
 .button:active {
   color: var(--basic-opacity-white);
   background-color: var(--basic-dark-red);
@@ -494,12 +493,12 @@ body {
   border: none;
 }
 
-.product-button-site:hover {
+.product-button-site:hover,
+.product-button-site:focus {
   background-color: var(--basic-red);
   border: none;
 }
 
-.product-button-site:focus,
 .product-button-site:active {
   color: var(--basic-opacity-white);
   background-color: var(--basic-dark-red);
@@ -513,11 +512,11 @@ body {
   border: none;
 }
 
-.product-button-apps:hover {
+.product-button-apps:hover,
+.product-button-apps:focus {
   background-color: var(--basic-green);
 }
 
-.product-button-apps:focus,
 .product-button-apps:active {
   color: var(--basic-opacity-white);
   background-color: var(--basic-dark-green);
@@ -531,12 +530,12 @@ body {
   border: none;
 }
 
-.product-button-presentation:hover {
+.product-button-presentation:hover,
+.product-button-presentation:focus, {
   background-color: var(--basic-yellow);
   border: none;
 }
 
-.product-button-presentation:focus,
 .product-button-presentation:active {
   color: var(--basic-opacity-white);
   background-color: var(--basic-dark-yellow);
@@ -560,7 +559,7 @@ body {
 
 .company-title {
   margin-top: -5px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding: 0;
   font-size: 45px;
   font-weight: 500;
@@ -588,9 +587,9 @@ body {
 .company-product-item::before {
   content: "";
   position: absolute;
-  top: 11px;
-  left: -38px;
-  width: 27px;
+  top: 12px;
+  left: -36px;
+  width: 25px;
   border-top: 2px solid var(--basic-light-red);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -606,14 +605,14 @@ body {
 
 .company-statistics-logo {
   margin-top: -39px;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
   width: 360px;
   height: 208px;
 }
 
 .company-statistics-title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 0;
   font-weight: 700;
   text-transform: uppercase;
@@ -705,7 +704,8 @@ body {
   opacity: 0.2;
 }
 
-.projects-link:hover {
+.projects-link:hover,
+.projects-link:focus {
   opacity: 1;
 }
 
@@ -962,6 +962,12 @@ body {
   pointer-events: none;
 }
 
+.filter-input:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto;
+  outline-color: inherit;
+}
+
 .filter-button {
   margin-top: 15px;
   width: 260px;
@@ -971,11 +977,11 @@ body {
   border-radius: 3px;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--basic-lighter-grey);
 }
 
-.filter-button:focus,
 .filter-button:active {
   color: var(--basic-opacity-black-30);
   background-color: var(--basic-grey-grey);
@@ -1030,7 +1036,8 @@ body {
   text-decoration: none;
 }
 
-.sort-type-link:hover {
+.sort-type-link:hover,
+.sort-type-link:focus {
   color: var(--basic-black-opacity-60);
 }
 
@@ -1042,7 +1049,8 @@ body {
   color: inherit;
 }
 
-.sort-type-link-current:hover {
+.sort-type-link-current:hover,
+.sort-type-link-current:focus {
   color: inherit;
 }
 
@@ -1077,13 +1085,13 @@ body {
 }
 
 .sort-direction-link-down:hover path,
-.sort-direction-link-up:hover path {
+.sort-direction-link-up:hover path,
+.sort-direction-link-down:focus path,
+.sort-direction-link-up:focus path {
   fill: var(--basic-grey-opacity-60);
 }
 
-.sort-direction-link-down:focus path,
 .sort-direction-link-down:active path,
-.sort-direction-link-up:focus path,
 .sort-direction-link-up:active path {
   fill: var(--basic-black-for-button);
 }
@@ -1174,11 +1182,11 @@ body {
   text-decoration: none;
 }
 
-.catalog-product-title:hover {
+.catalog-product-title:hover,
+.catalog-product-title:focus {
   color: var(--basic-light-red);
 }
 
-.catalog-product-title:focus,
 .catalog-product-title:active {
   color: var(--basic-opacity-black-30);
 }
@@ -1204,12 +1212,12 @@ body {
   border-radius: 3px;
 }
 
-.catalog-button:hover {
+.catalog-button:hover,
+.catalog-button:focus {
   background-color: var(--basic-red);
   border: none;
 }
 
-.catalog-button:focus,
 .catalog-button:active {
   background-color: var(--basic-dark-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -1253,11 +1261,11 @@ body {
   border-radius: 3px;
 }
 
-.pagination-item a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: var(--basic-lighter-grey);
 }
 
-.pagination-item a:focus,
 .pagination-item a:active {
   color: var(--basic-opacity-black-30);
   background-color: var(--basic-grey-grey);
@@ -1279,25 +1287,27 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
   margin-left: 41px;
-  padding-left: 79px;
-  width: 260px;
-  height: 50px;
+  padding-right: 77px;
+  padding-left: 78px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--basic-grey);
+  background-position: 50% 50%;
   border: none;
   border-radius: 3px;
 }
 
-.pagination-button:hover {
+.pagination-button:hover,
+.pagination-button:focus {
   background-color: var(--basic-lighter-grey);
 }
 
-.pagination-button:focus,
 .pagination-button:active {
   color: var(--basic-opacity-black-30);
   background-color: var(--basic-grey-grey);
@@ -1358,6 +1368,7 @@ body {
 }
 
 .contact {
+  width: 210px;
   margin-top: 4px;
   margin-bottom: 37px;
   color: var(--basic-light-grey);
@@ -1393,10 +1404,6 @@ body {
 
 .footer-social-item {
   position: relative;
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  background-color: var(--basic-grey-social);
 }
 
 .footer-social-item:not(:nth-child(3n - 2)) {
@@ -1407,7 +1414,15 @@ body {
   margin-top: 13px;
 }
 
-.footer-social-item::before {
+.footer-social-link {
+  display: block;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-color: var(--basic-grey-social);
+}
+
+.footer-social-link::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1420,38 +1435,33 @@ body {
   pointer-events: none;
 }
 
-.footer-social-item:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--basic-red);
 }
 
-.footer-social-item:active {
+.footer-social-link:active {
   background-color: var(--basic-dark-red);
   box-shadow: inset 0 3px 0 var(--basis-shadow-grey);
 }
 
-.footer-social-item:active::before {
+.footer-social-link:active::before {
   opacity: 0.3;
 }
 
-.footer-social-item-facebook::before {
+.footer-social-link-facebook::before {
   background-image: url("../img/facebook.svg");
   background-position: 51% 51%;
 }
 
-.footer-social-item-instagram::before {
-  background-image: url("../img/instagram.svg");
-}
-
-.footer-social-link {
-  display: block;
-  width: 100%;
-  height: 100%;
+.footer-social-link-instagram::before {
+   background-image: url("../img/instagram.svg");
 }
 
 .footer-invite {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .footer-social-title {
@@ -1574,11 +1584,11 @@ body {
   opacity: 0.3;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   opacity: 1;
 }
 
-.modal-close:focus,
 .modal-close:active {
   opacity: 0.1;
 }
