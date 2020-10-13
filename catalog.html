@@ -12,14 +12,14 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Nёrd's">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс: написано черными буквами">
       </a>
       <div class="main-header-bar">
         <div class="main-navigation-wrapper">
           <ul class="site-navigation">
             <li><a href="">Студия</a></li>
             <li><a href="">Клиенты</a></li>
-            <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+            <li class="site-navigation-current"><a href="catalog.html" aria-label="Вы находитесь на странице магазина">Магазин</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
           <div class="user-navigation">
@@ -147,7 +147,7 @@
       <section class="catalog">
         <h2 class="visually-hidden">Список веб-сайтов</h2>
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li class="catalog-item" tabindex="0">
             <div class="catalog-image">
               <img src="img/img-sedona.jpg" width="358" height="578" alt="Главная страница сайта Sedona описанием города, услугами и преимуществами">
             </div>
@@ -159,7 +159,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item"  tabindex="0">
             <div class="catalog-image">
               <img src="img/pink.jpg" width="358" height="578" alt="Главная страница сайта Pink с предложением скачать приложение и преимуществами">
             </div>
@@ -171,7 +171,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item"  tabindex="0">
             <div class="catalog-image">
               <img src="img/barbershop-borodynsky.jpg" width="358" height="578" alt="Главная страница сайта Barbershop Borodinsky с описанием цен, преимуществ и новостей">
             </div>
@@ -183,7 +183,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item"  tabindex="0">
             <div class="catalog-image">
               <img src="img/mishka.jpg" width="358" height="578" alt="Главная страница сайта Mishka с карточкой товара и краткой информацией о сайте">
             </div>
@@ -195,7 +195,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item"  tabindex="0">
             <div class="catalog-image">
               <img src="img/a-plus.jpg" width="358" height="578" alt="Главная страница сайта A plus с описанием преимуществ, форм обучения, обратной связью">
             </div>
@@ -207,12 +207,12 @@
               </div>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item"  tabindex="0">
             <div class="catalog-image">
               <img src="img/kvast.jpg" width="358" height="578" alt="Главная страница сайта KVAST с описанием новинок">
             </div>
-            <div class="catalog-product">
-              <div class="catalog-product-position">
+            <div class="catalog-product" tabindex="1">
+              <div class="catalog-product-position" >
                 <h3><a class="catalog-product-title" href="">Kvast</a></h3>
                 <p class="catalog-product-direction">Промо-сайт производителя<br>крафтового кваса</p>
                 <button class="catalog-button" type="button"  aria-label="Добавить в корзину по цене 9900 рублей">9 900 ₽</button>
@@ -257,11 +257,11 @@
           <li class="footer-social-item">
             <a class="footer-social-link" href="#" aria-label="ВКонтакте"></a>
           </li>
-          <li class="footer-social-item footer-social-item-facebook">
-            <a class="footer-social-link" href="#" aria-label="Facebook"></a>
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-link-facebook" href="#" aria-label="Facebook"></a>
           </li>
-          <li class="footer-social-item footer-social-item-instagram" aria-label="Instagram">
-            <a class="footer-social-link" href="#"></a>
+          <li class="footer-social-item" aria-label="Instagram">
+            <a class="footer-social-link footer-social-link-instagram" href="#"></a>
           </li>
         </ul>
       </div>
