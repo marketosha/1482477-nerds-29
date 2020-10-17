@@ -1533,7 +1533,7 @@ body {
   width: 360px;
   margin-bottom: 8px;
 }
-.contact-form input[type="text"] {
+.contact-form input {
   display: block;
   width: 325px;
   margin-right: 40px;
