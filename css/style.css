@@ -1606,7 +1606,7 @@ body {
 .modal-show {
   display: block;
   animation: bounce 0.7s;
-  transition-timing-function: linear;
+  transition-timing-function: ease-in;
 }
 
 .modal-error {
@@ -1617,13 +1617,13 @@ body {
 
 @keyframes bounce {
   0% {
-    top: 0;
-    transform: translateY(0, -50px);
+    top: 10%;
+    transform: translateY(-25%);
     opacity: 0;
   }
 
   100% {
-    top: 0;
+    top: 11%;
     transform: translate(-50%);
     opacity: 1;
   }
