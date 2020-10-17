@@ -1,7 +1,7 @@
 const contactLink = document.querySelector(".contact-button");
 const contactPopup = document.querySelector(".modal-contact");
 const contactClose = contactPopup.querySelector(".modal-close");
-const contactForm = contactPopup.querySelector(".login-form");
+const contactForm = contactPopup.querySelector(".contact-form");
 const contactName = contactPopup.querySelector(".contact-name-user");
 const contactMail = contactPopup.querySelector(".contact-mail-user");
 const contactText = contactPopup.querySelector(".contact-text-user");
@@ -20,9 +20,10 @@ contactLink.addEventListener("click", function (evt) {
   contactPopup.classList.add("modal-show");
   if (storage) {
     contactName.value = storage;
-    contactMail.focus();
+    contactMail.value = storage;
+    contactText.focus();
   } else {
-    contactMail.focus();
+    contactName.focus();
   }
 });
 
@@ -45,7 +46,7 @@ contactForm.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.key = "Escape") {
+  if (evt.key == "Escape") {
     if (contactPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       contactPopup.classList.remove("modal-show");
