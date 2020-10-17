@@ -1605,7 +1605,8 @@ body {
 
 .modal-show {
   display: block;
-  animation: bounce 0.5s;
+  animation: bounce 0.7s;
+  transition-timing-function: linear;
 }
 
 .modal-error {
@@ -1616,34 +1617,18 @@ body {
 
 @keyframes bounce {
   0% {
-    left: 20%;
-    top: 10%;
-
-    transform: translate(0, 0);
-    transform: scale(0);
+    top: 0;
+    transform: translateY(0, -50px);
     opacity: 0;
   }
-  60% {
-    left: 20%;
-    top: 10%;
-    transform: translate(0, 0);
-    transform: scale(1.1);
-  }
-  80% {
-    left: 20%;
-    top: 10%;
-    transform: translate(0, 0);
-    transform: scale(0.9);
-    opacity: 1;
-  }
+
   100% {
-    left: 20%;
-    top: 10%;
-    transform: translate(0, 0);
-    transform: scale(1);
+    top: 0;
+    transform: translate(-50%);
     opacity: 1;
   }
 }
+
 @keyframes shake {
   0%,
   100% {
