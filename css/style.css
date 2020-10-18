@@ -1324,6 +1324,7 @@ body {
   margin: 80px auto 0;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .footer-container-contact::before {
