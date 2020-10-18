@@ -1326,6 +1326,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.footer-container-map iframe {
+  position: relative;
+ border: none;
+}
+
 .footer-container-map::before {
   content: "";
   position: absolute;
@@ -1341,7 +1346,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  transform: translateY(54px);
+  transform: translateY(-366px);
 }
 
 .footer-contacts-window {
@@ -1390,6 +1395,7 @@ body {
   display: grid;
   grid-template-columns: 260px 1fr;
   column-gap: 140px;
+  margin-top: -312px;
   padding-top: 69px;
   padding-bottom: 69px;
 }
