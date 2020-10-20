@@ -5,6 +5,23 @@ const contactForm = contactPopup.querySelector(".contact-form");
 const contactName = contactPopup.querySelector(".contact-name-user");
 const contactMail = contactPopup.querySelector(".contact-mail-user");
 const contactText = contactPopup.querySelector(".contact-text-user");
+const newsSlider = document.querySelector (".news-slider");
+const sliderItem = document.querySelector(".news-slider-item")
+const sliderButton = document.querySelector (".slider-controls")
+let i = 0;
+
+
+sliderButton[0].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  sliderItem[0].classList.remove("news-slider1");
+  sliderButton[0].classList.add("current");
+  for (i=0; i<3; i++) {
+    if (i !== 0) {
+      sliderItem[i].classList.add("news-slider1");
+      sliderButton[i].classList.remove("current");
+    }
+  }
+})
 
 const isStorageSupport = true;
 const storage = "";

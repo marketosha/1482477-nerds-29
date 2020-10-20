@@ -1,34 +1,5 @@
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"),
-    url("../fonts/roboto.woff2") format("woff2"),
-    url("../fonts/roboto.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  src: local("Roboto Medium"), local("Roboto-Medium"),
-    url("../fonts/robotomedium.woff2") format("woff2"),
-    url("../fonts/robotomedium.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"),
-    url("../fonts/robotobold.woff2") format("woff2"),
-    url("../fonts/robotobold.woff") format("woff");
-  font-display: swap;
-}
-
 /* Variables */
+
 :root {
   --basic-dark-black: #000000;
   --basic-black: #283136;
@@ -67,6 +38,36 @@
   --basic-grey-opacity-30: rgb(166, 166, 166, 0.3);
   --basic-grey-opacity-60: rgb(166, 166, 166, 0.6);
   --basic-black-for-button: #231f20;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"),
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-display: swap;
 }
 
 /* body */
@@ -501,7 +502,7 @@ body {
 .product-button-site:active {
   color: var(--basic-opacity-white);
   background-color: var(--basic-dark-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basiс-shadow-grey);
   border: none;
 }
 
@@ -519,7 +520,7 @@ body {
 .product-button-apps:active {
   color: var(--basic-opacity-white);
   background-color: var(--basic-dark-green);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basiс-shadow-grey);
   border: none;
 }
 
@@ -1125,6 +1126,7 @@ body {
 
 .catalog-image {
   object-fit: contain;
+  background-color: var(--basic-grey);
 }
 
 .catalog-image::before {
@@ -1166,7 +1168,7 @@ body {
 
 .catalog-product-position {
   height: 100%;
-  overflow: auto;
+
 }
 
 .catalog-product h3 {
@@ -1193,8 +1195,10 @@ body {
 }
 
 .catalog-product-direction {
+  max-height: 400px;
   margin-top: -5px;
   margin-bottom: 33px;
+  overflow: auto;
 }
 
 .catalog-button {
@@ -1324,7 +1328,6 @@ body {
   margin: 80px auto 0;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-
 }
 
 .footer-container-contact iframe {
