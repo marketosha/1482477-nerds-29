@@ -5,23 +5,22 @@ const contactForm = contactPopup.querySelector(".contact-form");
 const contactName = contactPopup.querySelector(".contact-name-user");
 const contactMail = contactPopup.querySelector(".contact-mail-user");
 const contactText = contactPopup.querySelector(".contact-text-user");
-const newsSlider = document.querySelector (".news-slider");
-const sliderItem = document.querySelector(".news-slider-item")
-const sliderButton = document.querySelector (".slider-controls")
-let i = 0;
+const newsSlider = document.querySelectorAll(".news-slider");
+const sliderButtons = document.querySelectorAll (".slider-controls-button");
 
-
-sliderButton[0].addEventListener("click", function (evt) {
-  evt.preventDefault();
-  sliderItem[0].classList.remove("news-slider1");
-  sliderButton[0].classList.add("current");
-  for (i=0; i<3; i++) {
-    if (i !== 0) {
-      sliderItem[i].classList.add("news-slider1");
-      sliderButton[i].classList.remove("current");
+sliderButtons.forEach(function(item, index) {
+  item.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    item.classList.add("current");
+    newsSlider[index].classList.remove("news-slider1");
+    for (let i=0; i < sliderButtons.length; i++) {
+      if (i !== index) {
+        newsSlider[i].classList.add("news-slider1");
+        sliderButtons[i].classList.remove("current");
+      }
     }
-  }
-})
+  })
+});
 
 const isStorageSupport = true;
 const storage = "";

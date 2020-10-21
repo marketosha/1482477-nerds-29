@@ -259,6 +259,7 @@ body {
 /* slider */
 
 .slider {
+  position: relative;
   min-height: 424px;
   background-color: var(--basic-grey);
 }
@@ -372,7 +373,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 432px;
+  top: 310px;
   left: 50%;
   width: 88px;
   transform: translate(-50%);
