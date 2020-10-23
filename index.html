@@ -11,20 +11,16 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип диизайн-студии Нёрдс">
-      </a>
-      <div class="main-header-bar">
-        <div class="main-navigation-wrapper">
-          <ul class="site-navigation">
-            <li><a href="">Студия</a></li>
-            <li><a href="">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-          <div class="user-navigation">
-            <a class="basket" href="">Корзина</a>
-          </div>
+      <img class="header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип диизайн-студии Нёрдс">
+      <div class="main-navigation-wrapper">
+        <ul class="site-navigation">
+          <li><a href="">Студия</a></li>
+          <li><a href="">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a class="basket" href="">Корзина</a>
         </div>
       </div>
     </nav>
@@ -33,29 +29,30 @@
     <h1 class="main-title visually-hidden">Nёrd's</h1>
     <h2 class="main-title visually-hidden">Новости</h2>
     <section class="slider">
-      <div class="news-slider news-slide-current ">
-        <div class="news-slider-item news-slider-1">
+      <div class="news-slider">
+        <div class="news-slider-accuracy">
           <h3>Долго, дорого,<br>скрупулезно.</h3>
           <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
           <a class="news-slider-button button" href="">Узнать больше</a>
         </div>
       </div>
-      <div class="news-slider news-slider1">
-        <div class="news-slider-item news-slider-2">
+      <div class="news-slider news-slider-current">
+        <div class="news-slider-maths">
           <h3>Любим математику<br>как никто другой</h3>
           <p>Никакого креатива, только матемитические формулы<br>для расчета идеальных пропорций</p>
           <a class="news-slider-button button" href="">Узнать больше</a>
         </div>
       </div>
-      <div class="news-slider news-slider1">
-        <div class="news-slider-item news-slider-3">
+      <div class="news-slider news-slider-current">
+        <div class="news-slider-term">
           <h3>Только ночь,<br>только хардкор</h3>
           <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
           <a class="news-slider-button button" href="">Узнать больше</a>
         </div>
       </div>
       <div class="slider-controls">
-        <button class="slider-controls-button current" type="button" aria-label="Показать первый слайд"></button>
+        <button class="slider-controls-button slider-controls-button-current" type="button"
+          aria-label="Показать первый слайд"></button>
         <button class="slider-controls-button" type="button" aria-label="Показать второй слайд"></button>
         <button class="slider-controls-button" type="button" aria-label="Показать третий слайд"></button>
       </div>
@@ -106,7 +103,8 @@
         </section>
         <section class="company-statistics">
           <h2 class="visually-hidden">Статистика</h2>
-          <img class="company-statistics-logo" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип Нёрдс на фоне вспышки из конфети">
+          <img class="company-statistics-logo" src="img/nerds-illustration.png" width="360" height="208"
+            alt="Логотип Нёрдс на фоне вспышки из конфети">
           <p class="company-statistics-title">С 2004 года любим точность во всем:</p>
           <dl class="company-statistics-table">
             <div class="company-statistics-column">
@@ -155,12 +153,12 @@
       </section>
     </div>
   </main>
-  <footer class="page-footer main-footer">
+  <footer>
     <div class="footer-container-contact">
-      <iframe
+      <iframe class="footer-container-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603034823112!5m2!1sru!2sru"
-        width="1440" height="416" style="border:0;" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </iframe>
       <section class="footer-contacts container">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="footer-contacts-window">

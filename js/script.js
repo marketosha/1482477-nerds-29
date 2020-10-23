@@ -11,12 +11,12 @@ const sliderButtons = document.querySelectorAll (".slider-controls-button");
 sliderButtons.forEach(function(item, index) {
   item.addEventListener("click", function (evt) {
     evt.preventDefault();
-    item.classList.add("current");
-    newsSlider[index].classList.remove("news-slider1");
+    item.classList.add("slider-controls-button-current");
+    newsSlider[index].classList.remove("news-slider-current");
     for (let i=0; i < sliderButtons.length; i++) {
       if (i !== index) {
-        newsSlider[i].classList.add("news-slider1");
-        sliderButtons[i].classList.remove("current");
+        newsSlider[i].classList.add("news-slider-current");
+        sliderButtons[i].classList.remove("slider-controls-button-current");
       }
     }
   })
@@ -26,7 +26,7 @@ const isStorageSupport = true;
 const storage = "";
 
 try {
-  storage = localStorage.getItem("login");
+  storage = localStorage.getItem("contactName");
 } catch (err) {
 
 }
