@@ -424,6 +424,10 @@ body {
   color: var(--basic-black);
 }
 
+.product-item:last-child {
+  padding-right: 0;
+}
+
 .product-item p {
   margin-bottom: 32px;
 }
