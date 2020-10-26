@@ -17,11 +17,11 @@
   --basic-yellow: #eab534;
   --basic-dark-yellow: #e5a722;
   --basic-white: #ffffff;
-  --basic-opacity-white: rgb(255, 255, 255, 0.3);
+  --basic-opacity-white: rgba(255, 255, 255, 0.3);
   --basic-lighter-grey: #dfdfdf;
   --basic-grey-grey: #d5d5d5;
   --basic-clear-white: rgba(0, 0, 0, 0.0001);
-  --basic-opacity-black-30: rgb(0, 0, 0, 0.3);
+  --basic-opacity-black-30: rgba(0, 0, 0, 0.3);
   --basic-grey-social: #e1e1e1;
   --basic-grey-slider: #c1c1c1;
   --basiс-grey-filter: #d7dcdf;
@@ -30,13 +30,13 @@
   --basiс-shadow-black: rgba(0, 0, 0, 0.15);
   --basiс-button-border: #dbdbdb;
   --basiс-shadow-grey-40: rgba(0, 0, 0, 0.4);
-  --basiс-opacity-black-50: rgb(68, 68, 68, 0.5);
+  --basiс-opacity-black-50: rgba(68, 68, 68, 0.5);
   --basiс-grey-border: #d7dcde;
   --basiс-dark-grey-border: #b4b9bb;
   --basiс-dark-for-form: #4d4d4d;
-  --basic-black-opacity-60: rgb(0, 0, 0, 0.6);
-  --basic-grey-opacity-30: rgb(166, 166, 166, 0.3);
-  --basic-grey-opacity-60: rgb(166, 166, 166, 0.6);
+  --basic-black-opacity-60: rgba(0, 0, 0, 0.6);
+  --basic-grey-opacity-30: rgba(166, 166, 166, 0.3);
+  --basic-grey-opacity-60: rgba(166, 166, 166, 0.6);
   --basic-black-for-button: #231f20;
 }
 
@@ -349,7 +349,7 @@ body {
 .button:active {
   color: var(--basic-opacity-white);
   background-color: var(--basic-dark-red);
-  border: none;
+  box-shadow: inset 0px 3px 0px var(--basiс-shadow-grey);
 }
 
 .news-slider-button {
@@ -634,7 +634,7 @@ body {
   padding-bottom: 11px;
   max-width: 110px;
   line-height: 18px;
-  color: var(--basic-black-light);
+  color: var(--basic-black);
 }
 
 .company-statistics-percent {
@@ -688,7 +688,6 @@ body {
   width: 2px;
   height: 52px;
   transform: translateY(-50%);
-  background-color: var(--basic-grey);
 }
 
 .projects-link {
@@ -779,6 +778,7 @@ body {
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--basic-dark-black);
 }
 
 .filters ul {
@@ -966,7 +966,7 @@ body {
 .filter-input:focus + label::before {
   outline: thin dotted;
   outline: 5px auto;
-  outline-color: inherit;
+  outline-color: var(--basic-black);
 }
 
 .filter-button {
@@ -1006,8 +1006,7 @@ body {
   grid-template-columns: -webkit-min-content 1fr -webkit-max-content 40px;
   grid-template-columns: min-content 1fr max-content 40px;
   text-transform: uppercase;
-  background-color: var(--basic-white);
-}
+  }
 
 .sort-title {
   grid-column: 1;
@@ -1047,16 +1046,16 @@ body {
 }
 
 .sort-type-link:active {
-  color: inherit;
+  color: var(--basic-dark-black);
 }
 
 .sort-type-link-current {
-  color: inherit;
+  color: var(--basic-dark-black);
 }
 
 .sort-type-link-current:hover,
 .sort-type-link-current:focus {
-  color: inherit;
+  color: var(--basic-dark-black);
 }
 
 .sort-direction {
@@ -1308,7 +1307,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
+  color: var(--basic-dark-black);
   background-color: var(--basic-grey);
   background-position: 50% 50%;
   border: none;
@@ -1371,7 +1370,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 50px;
-  width: 268px;
+  width: 319px;
   height: 308px;
   font-size: 16px;
   line-height: 18px;
@@ -1503,6 +1502,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 22px;
+  color: var(--basic-darker-grey);
 }
 
 /*modal*/
