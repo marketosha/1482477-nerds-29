@@ -1358,8 +1358,9 @@ body {
 
 .footer-contacts-block {
   position: relative;
-  max-width: 1160px;
-}
+  width: 1440px;
+  margin: 0 auto;
+ }
 
 .footer-contacts {
   display: block;
